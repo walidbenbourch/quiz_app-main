@@ -69,7 +69,49 @@ INSERT INTO `choices` (`id`, `question_number`, `is_correct`, `text`) VALUES
 (31, 8, 0, 'new Array()'),
 (32, 8, 0, 'create_array()'),
 (33, 9, 1, 'True'),
-(34, 9, 0, 'False');
+(34, 9, 0, 'False'),
+(35, 10, 1, 'include'),
+(36, 10, 0, 'import'),
+(37, 10, 0, 'load'),
+(38, 10, 0, 'require_once'),
+(39, 11, 1, 'mysql_connect()'),
+(40, 11, 0, 'db_connect()'),
+(41, 11, 0, 'connect_db()'),
+(42, 11, 0, 'sql_connect()'),
+(43, 12, 1, '$_GET'),
+(44, 12, 0, '$_POST'),
+(45, 12, 0, '$_REQUEST'),
+(46, 12, 0, '$_SESSION'),
+(47, 13, 1, 'strlen()'),
+(48, 13, 0, 'length()'),
+(49, 13, 0, 'size()'),
+(50, 13, 0, 'count()'),
+(51, 14, 1, 'foreach'),
+(52, 14, 0, 'for'),
+(53, 14, 0, 'while'),
+(54, 14, 0, 'loop'),
+(55, 15, 1, 'session_start()'),
+(56, 15, 0, 'start_session()'),
+(57, 15, 0, 'begin_session()'),
+(58, 15, 0, 'init_session()'),
+(59, 16, 1, 'True'),
+(60, 16, 0, 'False'),
+(61, 17, 1, 'str_replace()'),
+(62, 17, 0, 'replace()'),
+(63, 17, 0, 'swap()'),
+(64, 17, 0, 'change()'),
+(65, 18, 1, '=='),
+(66, 18, 0, '==='),
+(67, 18, 0, '='),
+(68, 18, 0, '!='),
+(69, 19, 1, 'date()'),
+(70, 19, 0, 'time()'),
+(71, 19, 0, 'now()'),
+(72, 19, 0, 'getDate()'),
+(73, 20, 1, 'explode()'),
+(74, 20, 0, 'split()'),
+(75, 20, 0, 'break()'),
+(76, 20, 0, 'divide()');
 
 -- --------------------------------------------------------
 
@@ -95,7 +137,18 @@ INSERT INTO `questions` (`question_number`, `text`) VALUES
 (6, 'What is the correct way to create a function in PHP?'),
 (7, 'What is the correct way to write a single-line comment in PHP?'),
 (8, 'How do you create an array in PHP?'),
-(9, 'Is PHP a case-sensitive language for variable names?');
+(9, 'Is PHP a case-sensitive language for variable names?'),
+(10, 'Which statement is used to include a PHP file?'),
+(11, 'Which function is used to connect to a MySQL database in PHP?'),
+(12, 'Which superglobal is used to collect data sent via a URL query string?'),
+(13, 'Which function returns the length of a string in PHP?'),
+(14, 'Which loop is specifically designed to iterate over arrays in PHP?'),
+(15, 'Which function is used to start a session in PHP?'),
+(16, 'Can PHP scripts be embedded within HTML code?'),
+(17, 'Which function is used to replace parts of a string in PHP?'),
+(18, 'Which operator checks for equality without type comparison in PHP?'),
+(19, 'Which function is used to format a date in PHP?'),
+(20, 'Which function is used to split a string into an array in PHP?');
 
 --
 -- Indexes for dumped tables
@@ -121,7 +174,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `choices`
 --
 ALTER TABLE `choices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
